@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+ 
+      <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous" /><link
+      
+      <link rel="stylesheet" href="./assets/css/style.css"/></link>
+  
+    <title>Weather DashBoard</title>
+  
+  </head>
 
+  <body>
+     <header class="container-fluid text-center text-white bg-dark p-2">
+      <h1>Weather Dashboard</h1>
+     </header>
+    
+     <div class="container">
+      <div class="row">
+        <aside class="col-lg-3 bg-light"id ="search-wrapper">
+          <h5 class="mt-1">Search for City:</h5>
+          <div class="search-box">
+            <input class="form-control" type="text" id="search-value" />
+            <button class="btn btn-primary" id="search-button">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+          <div class="border-top border-2 border-secondary mt-3"></div>
+          <h4 class=" mt-1">Search History:</h4>
+         <div class="text-center my-3" id="history"></div>
+         <div class="d-grid mt-2"><button class="btn btn-primary clearBtn" type="button"> Erase History</button></div>
+        </aside>
+        
+        <section id= "city-wrapper" class="col-lg-9">
+          <h3 class="city"></h3>
+          <div class="conditions-row">
+          <div class="col-2"><img class="mx-auto d-block" id="current-icon" alt="" ></div>
+
+            c
+
+
+
+
+
+
+
+
+           <div class="row border selected-city" id ="current-forecast"></div>
+              
+                <div class="col-12"> 
+                    <h3 id= "searched-city"></h3> 
+                <div id="current-weather-container" class="list-group"></div>
+            </div>
+            <div class = "row border" id = "five-day-forecast">
+                <h2 class= "col-12" id = "forecast"></h2>
+                <div class = "d-flex" id = "five-day-container"></div>
+        </div>  
+
+     </div>
+  </body>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</html>
